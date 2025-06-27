@@ -3,19 +3,22 @@ import { translations } from '../data/translations';
 export const Hero = ({ language }) => {
   const t = translations[language].hero;
 
+  const scrollToContact = () => {
+    const section = document.getElementById('contact');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      console.log('Scrolled to contact section');
+    }
+  };
+
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="container">
         <div className="hero-content">
-          <div className="dots text-sm mb-4">{language === 'ua' ? 'Надійність' : 'Reliability'}</div>
-          <h1>{t.title}</h1>
-          <p>{t.description}</p>
-          <div className="accent-block">
-            <p>{t.quote}</p>
-          </div>
-        </div>
-        <div className="hero-image">
-          <img src="/src/assets/screen_2.png" alt="Pallets" className="object-cover" />
+          <h1 className="hero-title">{t.title}</h1>
+          <p className="hero-subtitle">{t.description}</p>
+          <p className="hero-quote">{t.quote}</p>
+          <a href="#contact" onClick={scrollToContact} className="hero-cta">{t.cta}</a>
         </div>
       </div>
     </section>

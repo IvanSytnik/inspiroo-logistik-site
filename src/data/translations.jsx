@@ -1,22 +1,35 @@
 export const translations = {
   ua: {
     hero: {
-      title: "Сила надійності",
-      subtitle: "Ваш стратегічний партнер у світі палет.",
-      description: "Ми поєднуємо досвід, якість і швидкість для вашого бізнесу.",
-      quote: "Один з найдинамічніших постачальників європалет у Німеччині, Австрії та Швейцарії.",
-      cta: "Отримати комерційну пропозицію",
-      call: "Зателефонувати зараз: +49 175 814 21 25",
-      certs: ["EPAL / UIC / IPPC сертифікати", "Швидка доставка та чітка логістика"]
+      title: "Ваша логістична мрія починається тут!",
+      description: "Швидко, надійно та доступно – ми доставимо ваше майбутнє.",
+      quote: "Довіряйте професіоналам!",
+      cta: "Зв'язатися зараз"
     },
     about: {
       title: "Про нас",
-      intro: "Ми – більше, ніж постачальник. Ми — надійна ланка вашого ланцюга поставок.",
+      intro: "Ми — ваш надійний партнер у логістиці",
+      description: "З багаторічним досвідом ми забезпечуємо швидку та безпечну доставку по всьому світу.",
       points: [
         { title: "Багаторічний досвід", text: "Понад 10 років у сфері виробництва та логістики палет у Європі." },
         { title: "Перевірена якість", text: "Працюємо лише з сертифікованими виробниками. EPAL / UIC / IPPC – без компромісів." },
         { title: "Своєчасна доставка", text: "Чіткі графіки, швидке реагування та персональний супровід кожного замовлення." }
       ]
+    },
+    experience: {
+      title: "Наші переваги",
+      years: {
+        title: "Багаторічний досвід",
+        description: "Понад 10 років у сфері виробництва та логістики палет у Європі."
+      },
+      quality: {
+        title: "Перевірена якість",
+        description: "Працюємо лише з сертифікованими виробниками. EPAL / UIC / IPPC – без компромісів."
+      },
+      delivery: {
+        title: "Своєчасна доставка",
+        description: "Чіткі графіки, швидке реагування та персональний супровід кожного замовлення."
+      }
     },
     company: {
       title: "InspirooLogistik — сучасна логістика палет для Європи",
@@ -63,13 +76,20 @@ export const translations = {
       cta: "Зв’язатись з нами"
     },
     contact: {
-      title: "Маєте питання? Напишіть або зателефонуйте!",
+     title: "Маєте питання? Напишіть або зателефонуйте!",
       subtitle: "Ми завжди поруч та відкриті до співпраці.",
       company: "InspirooLogistik",
       address: "Charlottenstraße 16, 78549 Spaichingen, Німеччина",
       phone: "+49 175 814 21 25",
       email: "info@inspiroologistik.com",
-      hours: "Пн–Пт: 08:00–18:00, Сб: 09:00–13:00, Неділя — вихідний"
+      hours: "Пн–Пт: 08:00–18:00, Сб: 09:00–13:00, Неділя — вихідний",
+      errorRequired: "Заповніть усі обов'язкові поля!",
+      errorConsent: "Потрібна згода на обробку даних!",
+      submitting: "Відправка...",
+      success: "Дякуємо! Ваше повідомлення відправлено.",
+      error: "Помилка відправки. Спробуйте ще раз.",
+      privacyLink: "політики конфіденційності",
+      consentText: "Я даю згоду на обробку моїх персональних даних відповідно до ",
     },
     nav: {
       home: "ГОЛОВНА",
@@ -90,22 +110,22 @@ export const translations = {
       ]
     },
     footer: {
-      text: 'Доставка по всій Європі',
+     text: 'Доставка по всій Європі',
+      privacy: 'Політика конфіденційності',
+      terms: 'Умови використання'
     }
   },
   de: {
     hero: {
-      title: "Die Kraft der Zuverlässigkeit",
-      subtitle: "Ihr strategischer Partner in der Welt der Paletten.",
-      description: "Wir vereinen Erfahrung, Qualität und Schnelligkeit für Ihr Unternehmen.",
-      quote: "Einer der dynamischsten Palettenlieferanten in Deutschland, Österreich und der Schweiz.",
-      cta: "Angebot anfordern",
-      call: "Jetzt anrufen: +49 175 814 21 25",
-      certs: ["Zertifiziert: EPAL / UIC / IPPC", "Schnelle Lieferung und klare Logistik"]
+      title: "Ihr Logistiktraum beginnt hier!",
+      description: "Schnell, zuverlässig und erschwinglich – wir liefern Ihre Zukunft.",
+      quote: "Vertrauen Sie den Profis!",
+      cta: "Jetzt Kontaktieren"
     },
     about: {
-      title: "Über uns",
-      intro: "Wir sind mehr als nur ein Lieferant – wir sind das zuverlässige Glied in Ihrer Lieferkette.",
+      title: "Über Uns",
+      intro: "Wir sind Ihr verlässlicher Logistikpartner",
+      description: "Mit jahrelanger Erfahrung sorgen wir für schnelle und sichere Lieferungen weltweit.",
       points: [
         { title: "Langjährige Erfahrung", text: "Über 10 Jahre Erfahrung in der Produktion und Logistik von Paletten in Europa." },
         { title: "Zertifizierte Qualität", text: "Nur geprüfte Partner. EPAL / UIC / IPPC – ohne Kompromisse." },
@@ -122,6 +142,21 @@ export const translations = {
         "Professioneller Service und schnelle Reaktion auf Anfragen"
       ],
       closing: "InspirooLogistik – wir liefern nicht nur Paletten. Wir schaffen Vertrauen, das mit Ihnen zusammenarbeitet."
+    },
+    experience: {
+      title: "Unsere Vorteile",
+      years: {
+        title: "Langjährige Erfahrung",
+        description: "Über 10 Jahre in der Herstellung und Logistik von Paletten in Europa."
+      },
+      quality: {
+        title: "Bewährte Qualität",
+        description: "Wir arbeiten nur mit zertifizierten Herstellern. EPAL / UIC / IPPC – keine Kompromisse."
+      },
+      delivery: {
+        title: "Pünktliche Lieferung",
+        description: "Klarer Zeitplan, schnelle Reaktion und persönliche Betreuung jeder Bestellung."
+      }
     },
     products: {
       title: "Produkte von InspirooLogistik",
@@ -157,13 +192,20 @@ export const translations = {
       cta: "Kontaktieren Sie uns"
     },
     contact: {
-      title: "Haben Sie Fragen? Schreiben oder rufen Sie an!",
-      subtitle: "Wir sind immer in der Nähe und offen für Zusammenarbeit.",
+    title: "Haben Sie Fragen? Schreiben oder rufen Sie an!",
+      subtitle: "Wir sind immer da und offen für Zusammenarbeit.",
       company: "InspirooLogistik",
       address: "Charlottenstraße 16, 78549 Spaichingen, Deutschland",
       phone: "+49 175 814 21 25",
       email: "info@inspiroologistik.com",
-      hours: "Mo–Fr: 08:00–18:00, Sa: 09:00–13:00, Sonntag – geschlossen"
+      hours: "Mo–Fr: 08:00–18:00, Sa: 09:00–13:00, So — geschlossen",
+      errorRequired: "Füllen Sie alle Pflichtfelder aus!",
+      errorConsent: "Einwilligung zur Datenverarbeitung erforderlich!",
+      submitting: "Senden...",
+      success: "Vielen Dank! Ihre Nachricht wurde gesendet.",
+      error: "Fehler beim Senden. Bitte versuchen Sie es erneut.",
+      privacyLink: "Datenschutzrichtlinie",
+      consentText: "Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der ",
     },
     nav: {
       home: "HOME",
@@ -185,28 +227,43 @@ export const translations = {
     },
     de: {
     footer: {
-      text: 'Lieferung in ganz Europa',
+      text: 'Delivery across Europe',
+      privacy: 'Privacy Policy',
+      terms: 'Terms of Use'
     },
   },
   },
   en: {
     hero: {
-      title: "The Power of Reliability",
-      subtitle: "Your strategic partner in the pallet world.",
-      description: "We combine experience, quality and speed to support your business.",
-      quote: "One of the most dynamic pallet suppliers in Germany, Austria and Switzerland.",
-      cta: "Request a Quote",
-      call: "Call now: +49 175 814 21 25",
-      certs: ["Certified: EPAL / UIC / IPPC", "Fast delivery and efficient logistics"]
+      title: "Your Logistics Dream Starts Here!",
+      description: "Fast, reliable, and affordable – we deliver your future.",
+      quote: "Trust the professionals!",
+      cta: "Contact Now"
     },
     about: {
       title: "About Us",
-      intro: "We are more than just a supplier – we are the reliable link in your supply chain.",
+      intro: "We are your trusted logistics partner",
+      description: "With years of experience, we ensure fast and secure deliveries worldwide.",
       points: [
         { title: "Years of Experience", text: "Over 10 years in pallet production and logistics across Europe." },
         { title: "Verified Quality", text: "We work exclusively with certified manufacturers. EPAL / UIC / IPPC — no compromises." },
         { title: "On-Time Delivery", text: "Precise scheduling, fast response, and dedicated support for every order." }
       ]
+    },
+    experience: {
+      title: "Our Advantages",
+      years: {
+        title: "Extensive Experience",
+        description: "Over 10 years in pallet manufacturing and logistics across Europe."
+      },
+      quality: {
+        title: "Proven Quality",
+        description: "We work only with certified manufacturers. EPAL / UIC / IPPC – no compromises."
+      },
+      delivery: {
+        title: "Timely Delivery",
+        description: "Clear schedules, quick response, and personal support for every order."
+      }
     },
     company: {
       title: "InspirooLogistik – Modern Pallet Logistics for Europe",
@@ -253,13 +310,20 @@ export const translations = {
       cta: "Contact Us"
     },
     contact: {
-      title: "Have Questions? Write or Call!",
-      subtitle: "We’re always nearby and open to collaboration.",
+     title: "Have questions? Write or call us!",
+      subtitle: "We are always here and open to cooperation.",
       company: "InspirooLogistik",
       address: "Charlottenstraße 16, 78549 Spaichingen, Germany",
       phone: "+49 175 814 21 25",
       email: "info@inspiroologistik.com",
-      hours: "Mon–Fri: 08:00–18:00, Sat: 09:00–13:00, Sun – closed"
+      hours: "Mon–Fri: 08:00–18:00, Sat: 09:00–13:00, Sun — closed",
+      errorRequired: "Fill in all required fields!",
+      errorConsent: "Consent to data processing is required!",
+      submitting: "Submitting...",
+      success: "Thank you! Your message has been sent.",
+      error: "Submission error. Please try again.",
+      privacyLink: "privacy policy",
+      consentText: "I consent to the processing of my personal data in accordance with the ",
     },
     nav: {
       home: "HOME",
@@ -281,7 +345,9 @@ export const translations = {
     },
     en: {
     footer: {
-      text: 'Delivery across Europe',
+     text: 'Lieferung in ganz Europa',
+      privacy: 'Datenschutz',
+      terms: 'Nutzungsbedingungen'
     },
   },
   }

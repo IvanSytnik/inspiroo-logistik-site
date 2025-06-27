@@ -1,29 +1,42 @@
-import { Link } from 'react-router-dom';
-import {translations} from '../data/translations'
-
+import { translations } from '../data/translations';
 
 export const Delivery = ({ language }) => {
   const t = translations[language].delivery;
+
+  const scrollToContact = () => {
+    const section = document.getElementById('contact');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      console.log('Scrolled to contact section');
+    }
+  };
+
   return (
-    <section className="py-16 bg-gray-100">
-      <div className="container mx-auto px-4">
-        <div className="orange-dots text-sm text-center mb-2">{language === 'ua' ? 'Доставка' : language === 'de' ? 'Lieferung' : 'Delivery'}</div>
-        <h2 className="text-2xl sm:text-3xl font-bold text-center uppercase orange-underline mb-8">{t.title}</h2>
-        <p className="text-center mb-4 text-sm sm:text-base">{t.text}</p>
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-4">
-          {t.countries.map((country, index) => (
-            <span key={index} className="px-2 text-sm sm:text-base">{country}</span>
-          ))}
+    <section className="section delivery" id="delivery">
+      <div className="container">
+        <div className="section-title">
+          <h2>{t.title}</h2>
         </div>
-        <ul className="list-disc list-inside text-center mb-4 text-sm sm:text-base">
-          {t.details.map((detail, index) => (
-            <li key={index}>{detail}</li>
-          ))}
-        </ul>
-        <div className="text-center">
-          <Link to="/contact" className="bg-[#F5A623] text-white px-4 sm:px-6 py-2 sm:py-3 rounded hover:bg-[#e69520] text-sm sm:text-base">
-            {t.cta}
-          </Link>
+        <div className="section-content delivery-content">
+          <div className="delivery-map">
+            <img src="/src/assets/EU27-2020_European_Union_map.svg.png" alt="Europe Delivery Map" />
+          </div>
+          <div className="delivery-details">
+            <p className="delivery-text">{t.text}</p>
+            <div className="delivery-countries-grid">
+              {t.countries.map((country, index) => (
+                <div className="country-card" key={index}>
+                  <span>{country}</span>
+                </div>
+              ))}
+            </div>
+            <ul className="delivery-features">
+              {t.details.map((detail, index) => (
+                <li key={index}>{detail}</li>
+              ))}
+            </ul>
+            <a href="#contact" onClick={scrollToContact} className="button delivery-cta">{t.cta}</a>
+          </div>
         </div>
       </div>
     </section>
