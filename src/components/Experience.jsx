@@ -21,7 +21,7 @@ export const Experience = ({ language }) => {
           </div>
           <div className="experience-item">
             <div className="experience-image">
-              <img src="/src/assets/experience-2.webp" alt="Quality 1" />
+              <img src="/src/assets/experience-2.jpg" alt="Quality 1" />
             </div>
             <div className="experience-text">
               <h3>{t.quality.title}</h3>
@@ -30,7 +30,7 @@ export const Experience = ({ language }) => {
           </div>
           <div className="experience-item">
             <div className="experience-image">
-              <img src="/src/assets/experience-3.webp" alt="Delivery 1" />
+              <img src="/src/assets/experience-3.jpg" alt="Delivery 1" />
             </div>
             <div className="experience-text">
               <h3>{t.delivery.title}</h3>
